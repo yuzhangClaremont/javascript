@@ -10,8 +10,9 @@ multiply();
 var divided = function() {
     var result = 3 / 4;
     console.log("3 divided by 4 is ", result);
+    return result;
 }
-divided();
+var c = divided();
 
 // Immediately Invoked Function Expression.
 // Runs as soon as the browser finds it:
@@ -19,3 +20,5 @@ divided();
     var result = 12 / 0.75;
     console.log("12 divided by 0.75 is ", result);
 }())
+
+document.body.innerHTML = "<h1> divided():"+divided()+"</h1>";

@@ -12,3 +12,13 @@ var course = {
 }
 
 console.log(course);
+
+function Course(title, instructor, level, published, views){
+    this.title = title;
+    //property anonymous fucnion
+    this.updateViews = function(){
+        return ++views;
+    }
+}
+
+var courses = [new Course("hello", "my", 1, true, 1), course]
